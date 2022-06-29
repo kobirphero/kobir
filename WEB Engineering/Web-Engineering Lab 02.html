@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Engineering Lab 02</title>
+</head>
+<body style ="color:white" bgcolor="black">
+    <h2>Lab Report 02:</h2>
+    <h2 style="padding-left:44%; font-size: 22px; font-family: Arial, Helvetica, sans-serif;"><b>MD. SHIHABUL KOBIR</b></h2>
+        <h3 style="padding-left:45%; font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Reg.No.: <i>2017-14-15 (italic)</i></h3>
+        <br>
+        <br>
+        <img src="images/DSC_0067.JPG" alt="kobir" hight="700" width="600" style ="padding-left: 30%;">
+        <br><br>
+        <input style ="padding-left: 45%; display: none;" type ="file" id ="file" onchange="loadFile(event)" accept="image/*"/>
+        <br>
+        <label style ="margin:auto; bottom: 0; left: 0; right: 10; display:flex; justify-content: center; align-items: center; height: 40px; width: 120px; font-family: Arial, Helvetica, sans-serif; background-color: #f5af09;" for ="file">Upload photo</label>
+            <p><img style ="padding-left: 40%;" id="output" width="400" /></p>
+
+            <script>
+                var loadFile = function(event) {
+                    var image = document.getElementById('output');
+                    image.src = URL.createObjectURL(event.target.files[0]);
+                };
+            </script>
+               <br>
+       <h4 style = "color:rgb(26, 247, 221)"> My favourite colors:</h4>
+       <ol style = "color:rgb(104, 42, 11)">
+           <li>Black</li>
+           <li>Pale-Orange</li>
+           <li>Sky Bllue</li>
+           <li>Light Yellow</li>
+           <li>OffWhite</li>
+       </ol>
+
+       <h4 style = "color:rgb(26, 247, 221)">My Favourite Drinks:</h4>
+       <ul>
+        <li>Lemon Juice</li>
+        <li>Coffee</li>
+        <li>Green Tea</li>
+        <li>Milk Shake</li>
+       </ul>
+
+       <dl>
+        <dt style = "color:rgb(236, 239, 34)">Lemon Juice</dt>
+        <dd>A drink made with sugar and lemon</dd>
+        <dt style = "color:rgb(246, 228, 34)">Coffee</dt>
+        <dd>A black hot drink</dd>
+        <dt style = "color:rgb(238, 187, 32)">Milk Shake</dt>
+        <dd>A drink made with milk, ice, fruit,chocolate</dd>
+       </dl>
+
+       <h4 style = "color:rgb(26, 247, 221)">My Favourite Food:</h4>
+       <ul style = "list-style-type: square;">
+        <li>Chicken Fry</li>
+        <li>Biriani</li>
+        <li>Fish Cutlet</li>
+        <li>Chicken Roast</li>
+       </ul>
+
+       <h4 style = "color:rgb(26, 247, 221)">My Favourite Books:</h4>
+       <ul style = " list-style-type: circle;">
+        <li>Sharlok Homes</li>
+        <li>Professor Shanku</li>
+        <li>Shantu And Kakababu</li>
+        <li>Feluda</li>
+       </ul>
+
+       <h4 style = "color:rgb(26, 247, 221)">My Interest:</h4>
+       <ul style = " list-style-type:'\2713' ;">
+        <li>Robotics</li>
+        <li>IOT</li>
+        <li>Astronomy</li>
+       </ul>
+ 
+       <a href="Web-Engineering LAb 01.html" style="padding-left:45%; padding-bottom: 10%; font-size: 20px;">Go to first lab report</a>
+
+    
+</body>
+</html>
