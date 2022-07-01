@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form SoS</title>
+    <link rel="stylesheet" href="Registration_form_style.css">
+        <!--CODE BY KOBIR-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Register Here</div>
+    <div class="content">
+      <form action="reg.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" maxlength="32" placeholder="Enter your  full name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" name="address" size="20" placeholder="where are you from?" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" placeholder="Enter your valid mail address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" name="phone" placeholder="Enter your valid number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password"name="pass" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password"name="con_pass" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Batch</span>
+            <select id="batch" name="batch" required>
+            <option value=""></option>
+            <option value="2nd">2nd Batch</option>
+            <option value="3rd">3rd Batch</option>
+            <option value="4th">4th Batch</option>
+            <option value="5th">5th Batch</option>
+            <option value="6th">6th Batch</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details" name="department">Department</span>
+            <select id="department" required>
+            <option value=""></option>
+            <option value="CSE"> Computer Science and Engineering </option>
+            <option value="MGT"> Management </option>
+            <option value="THM"> Tourism and Hospitality Management </option>
+            <option value="FES"> Forestry and Environmental Science </option>
+            </select>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          </div>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" name="checkbox" value="agree" required><p> I agree all the <a href="#">terms and connditions.</a></p>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
